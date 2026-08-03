@@ -1,0 +1,6 @@
+{
+  "name": "Easydocflow",
+  "description": "Fast, secure online document & PDF processing suite. Merge, split, compress, edit, sign, convert PDFs and summarize documents with AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
