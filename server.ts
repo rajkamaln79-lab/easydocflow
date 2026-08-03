@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+cconst PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: "50mb" }));
 
@@ -240,8 +240,5 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`[Easydocflow Server] Running at http://localhost:${PORT}`);
-  });
-}
-
-startServer();
+  console.log(Easydocflow Server running on port ${PORT});
+});
