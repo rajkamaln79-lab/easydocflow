@@ -1,10 +1,10 @@
 import { PDFDocument, rgb, degrees as pdfDegrees, StandardFonts } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
-import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.mjs?url';
 import { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType } from 'docx';
 
-// Set worker URL for pdfjs-dist using Vite bundled asset URL
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+// Set worker URL for pdfjs-dist using CDN hosted worker
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
 
 export interface ProcessResult {
   pdfBytes?: Uint8Array;
