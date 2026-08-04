@@ -240,5 +240,5 @@ async function startServer() {
   }
 
  app.listen(PORT, "0.0.0.0", () => {
-  console.log([Easydocflow Server] Running on port ${PORT});
+ console.log(`[Easydocflow Server] Running on port ${PORT}`);
 });
